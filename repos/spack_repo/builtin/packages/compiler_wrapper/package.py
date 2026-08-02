@@ -42,6 +42,13 @@ class CompilerWrapper(Package):
     if sys.platform != "win32":
         version("1.1.0", sha256="a07b35081d14b0729090bc1e5790a5dda2d5b997e064c62da39a1224ee249b2a")
         version("1.0", sha256="ac876f7600fa6cb0c74ae172ef1c61661aacff03a6befbc7d87e092e2f2233f9")
+        # Prototype: pulls in --build-id/-Wl,--build-id injection ahead of an official release.
+        version(
+            "1.1.0-build-id",
+            git="https://github.com/SebastianPaucar/compiler-wrapper.git",
+            commit="c79d27ee62a190d854edb5b5bb5e3b8fcdc4a356",
+        )
+
     else:
         version("1.0")
         has_code = False
