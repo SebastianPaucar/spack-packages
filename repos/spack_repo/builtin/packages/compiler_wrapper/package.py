@@ -46,7 +46,7 @@ class CompilerWrapper(Package):
         version(
             "1.1.0-build-id",
             git="https://github.com/SebastianPaucar/compiler-wrapper.git",
-            commit="c79d27ee62a190d854edb5b5bb5e3b8fcdc4a356",
+            commit="59c5d3ebbe3098499805209bf0000ea4ad19d3ce",
         )
 
     else:
